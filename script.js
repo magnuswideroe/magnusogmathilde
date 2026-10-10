@@ -16,12 +16,12 @@ const T = {
     "nav.info": "Good to know",
     "nav.menu": "menu",
 
-    "hero.sub": "Skåtøy, Kragerø<br>Saturday 26 June 2027",
+    "hero.sub": "Skåtøy, Kragerø<br>25–27 June 2027",
     "hero.hand": "we're getting married",
     "hero.alt": "Magnus and Mathilde kissing at a dinner table",
     "hero.altChurch": "Old photograph of Skåtøy Church",
     "hero.poem": "<p>Next summer<br>we're getting married.</p><p>We hope<br>you'll be there.</p><p>First in the white church<br>on Skåtøy,</p><p>then across the water</p><p>to a garden<br>by the sea at Isnes.</p><p>We'll eat for hours,</p><p>make speeches,</p><p>dance</p><p>until the last boat leaves.</p>",
-    "hero.month": "june",
+    "hero.month": "June 2027",
 
     "band1.label": "Isnes, summer",
     "band1.text": "a long day<br>by the sea",
@@ -33,7 +33,11 @@ const T = {
     "band3.text": "will you come?",
 
     "program.title": "Programme",
-    "program.label": "Saturday 26 June 2027",
+    "program.fri": "Friday 25",
+    "program.sat": "Saturday 26",
+    "program.sun": "Sunday 27",
+    "program.soon": "coming",
+    "program.soon2": "coming",
     "program.t1": "Ceremony",
     "program.t1d": "Skåtøy Church",
     "program.t2": "Ferry to Isnes",
@@ -61,6 +65,9 @@ const T = {
     "transport.p3": "Water taxis run from the party to the town centre and other places nearby throughout the night.",
     "transport.dep": "provisional departures",
 
+    "band4.label": "accommodation",
+    "band4.text": "sleep well",
+    "band4.alt": "Mathilde and Magnus smiling in a tent, Magnus reading a book",
     "stay.title": "Accommodation",
     "stay.alt": "A house by the sea",
     "stay.p1": "You're free to stay<br>wherever you like.",
