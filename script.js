@@ -16,85 +16,85 @@ const T = {
     "nav.info": "Good to know",
     "nav.menu": "Menu",
 
+    "hero.sub": "Skåtøy – Kragerø – 26.06.2027",
     "hero.hand": "we're getting married",
-    "hero.date": "Saturday 26 June 2027",
-    "hero.down": "Read more",
     "hero.alt": "Magnus and Mathilde kissing at a dinner table",
+    "hero.altChurch": "Old photograph of Skåtøy Church",
+    "hero.poem": "<p>Next summer<br>we're getting married.</p><p>We hope<br>you'll be there.</p><p>First in the white church<br>on Skåtøy,</p><p>then across the water</p><p>to a garden<br>by the sea at Isnes.</p><p>We'll eat for hours,</p><p>make speeches,</p><p>dance</p><p>until the last boat leaves.</p>",
+    "hero.month": "june",
 
-    "welcome.title": "Dear friends and family",
-    "welcome.p1": "Next summer we're getting married at Skåtøy Church, and we'd love for you to be there. After the ceremony we'll take the ferry over to Isnes and celebrate for the rest of the day and night with a garden party by the sea.",
-    "welcome.p2": "Here you'll find the programme, how to get around, where to stay and everything practical. We'll add more as our plans come together.",
-    "welcome.alt": "Magnus and Mathilde in sunglasses in front of turquoise water",
+    "bleed1.text": "a long day<br><i>by the sea</i>",
+    "bleed1.alt": "A white house and a red outbuilding by the sea",
+    "bleed2.text": "<i>across</i><br>the water",
+    "bleed2.alt": "Magnus and Mathilde in front of turquoise water",
+    "bleed3.text": "will <i>you</i> come?",
 
     "program.title": "Programme",
-    "program.hand": "Saturday 26 June",
-    "program.alt": "Old black-and-white photograph of Skåtøy Church",
-    "program.caption": "Skåtøy Church",
+    "program.label": "Saturday 26 June 2027",
     "program.t1": "Ceremony",
     "program.t1d": "Skåtøy Church",
     "program.t2": "Ferry to Isnes",
-    "program.t2d": "We'll take the ferry together from Skåtøy pier",
-    "program.t3": "Bubbles and aperitifs",
-    "program.t3d": "Garden party at Isnesveien 6",
+    "program.t2d": "together, from Skåtøy pier",
+    "program.t3": "Bubbles &amp; aperitifs",
     "program.t4": "Dinner",
-    "program.t4d": "In the garden, with speeches along the way",
-    "program.t5": "Cake and dessert",
+    "program.t4d": "in the garden, with speeches",
+    "program.t5": "Cake &amp; dessert",
     "program.t6": "The dance floor opens",
-    "program.t6d": "And we'll dance until the last boat",
+    "program.t6d": "until the last boat",
+    "program.alt": "Skåtøy Church",
+    "program.hand": "yes!",
 
     "transport.title": "Transport",
     "transport.lead": "On the day, we'll mostly be travelling by water. We're arranging boats between Kragerø town centre, the church and the party.",
-    "transport.alt": "A white house and a red outbuilding by the sea in the archipelago",
-    "transport.hand": "across the water",
-    "transport.l1": "Kragerø centre to Skåtøy Church",
     "transport.h1": "Water taxi to the ceremony",
+    "transport.l1": "Kragerø centre → Skåtøy Church",
     "transport.p1": "We're arranging water taxis from Kragerø centre to the church. If you need a boat from somewhere else, let us know.",
-    "transport.l2": "Skåtøy pier to Isnes",
     "transport.h2": "Ferry to the garden party",
+    "transport.l2": "Skåtøy pier → Isnes",
     "transport.p2": "After the ceremony we'll all take a ferry from Skåtøy pier, a short walk from the church. The trip takes about 30 minutes.",
-    "transport.l3": "Isnes to Kragerø centre",
     "transport.h3": "Boats home",
+    "transport.l3": "Isnes → Kragerø centre",
     "transport.p3": "Water taxis run from the party to the town centre and other places nearby throughout the night.",
-    "transport.dep": "Provisional departures",
-    "transport.times": "23:00, 00:00, 01:00 and 02:00",
+    "transport.dep": "provisional departures",
 
     "stay.title": "Accommodation",
-    "stay.hand": "a place to rest",
-    "stay.p1": "You're free to stay wherever you like. We've reserved 20 rooms at Hotel Victoria, which can be booked from Friday to Sunday or from Saturday to Sunday.",
-    "stay.p2": "The rooms become available in January 2027, first come, first served.",
-    "stay.howTitle": "How to book",
-    "stay.how": "Send an email to <span class=\"todo\">[email address]</span> with your name, the number of guests and the nights you'd like.",
+    "stay.alt": "A house by the sea",
+    "stay.p1": "You're free to stay<br>wherever you like.",
+    "stay.p2": "We've reserved 20 rooms<br>at Hotel Victoria,<br>Friday to Sunday<br>or Saturday to Sunday.",
+    "stay.p3": "The rooms open<br>in January 2027.",
+    "stay.p4": "First come,<br>first served.",
+    "stay.how": "To book, send an email to <span class=\"todo\">[email address]</span> with your name, the number of guests and the nights you'd like.",
+    "stay.hand": "sleep well",
 
-    "rsvp.hand": "will you come?",
-    "rsvp.lead": "Please let us know by <span class=\"todo\">[reply-by date]</span>. Reply once for everyone on your invitation.",
-    "rsvp.name": "Full name",
-    "rsvp.coming": "Can you come?",
-    "rsvp.yes": "Yes, I'll be there",
-    "rsvp.no": "Sadly not",
-    "rsvp.plus": "Others on your invitation who are coming",
-    "rsvp.allergy": "Allergies or dietary requirements",
-    "rsvp.msg": "Anything else we should know?",
-    "rsvp.send": "Send reply",
+    "rsvp.lead": "Please let us know by <span class=\"todo\">[reply-by date]</span>.<br><i>Once for everyone on your invitation.</i>",
+    "rsvp.name": "name",
+    "rsvp.coming": "will you come?",
+    "rsvp.yes": "yes, of course",
+    "rsvp.no": "sadly not",
+    "rsvp.plus": "who else",
+    "rsvp.allergy": "allergies",
+    "rsvp.msg": "anything else?",
+    "rsvp.send": "send reply",
 
     "info.title": "Good to know",
-    "info.hand": "the practical bits",
-    "info.dressT": "Dress code",
-    "info.dress1": "Summer formal. Women: a long dress, preferably not black. Men: a suit, or a tuxedo if you like.",
-    "info.dress2": "It's a garden wedding, so choose shoes that can handle grass.",
-    "info.speechT": "Speeches and performances",
-    "info.speech": "Would you like to give a speech or perform? Contact our toastmaster <span class=\"todo\">[name and contact]</span> by 1 June 2027.",
-    "info.allergyT": "Allergies",
-    "info.allergy": "Add them to the RSVP form, or let us know at <span class=\"todo\">[email address]</span> by 1 May 2027.",
-    "info.giftT": "Gifts",
-    "info.gift1": "Many of you are travelling a long way to be with us, and we don't expect any gifts. Having you there to celebrate with us is the greatest gift.",
-    "info.gift2": "If you'd still like to give something, a contribution towards our honeymoon would make us very happy. We'd also love:",
-    "info.w1": "A camping stove (stormkjøkken) or accessories",
-    "info.w2": "A thermos",
-    "info.w3": "A record player",
-    "info.w4": "A stand mixer (Le Rotier or Ankarsrum)",
+    "info.dressT": "dress code",
+    "info.dressBig": "Summer formal.",
+    "info.dress1": "Women: a long dress, preferably not black. Men: a suit, or a tuxedo if you like.",
+    "info.dress2": "It's a garden wedding. Choose shoes that can handle grass.",
+    "info.speechT": "speeches &amp; performances",
+    "info.speech": "Would you like to say a few words? Contact our toastmaster <span class=\"todo\">[name and contact]</span> by 1 June 2027.",
+    "info.allergyT": "allergies",
+    "info.allergy": "Add them to your reply, or let us know at <span class=\"todo\">[email address]</span> by 1 May 2027.",
+    "info.giftT": "gifts",
+    "info.giftBig": "The best gift is you being there.",
+    "info.gift1": "Many of you are travelling a long way, and we don't expect any gifts. If you'd still like to give something, a contribution to our honeymoon would make us very happy, or:",
+    "info.w1": "a camping stove (stormkjøkken)",
+    "info.w2": "a thermos",
+    "info.w3": "a record player",
+    "info.w4": "a stand mixer <small class=\"type\">(Le Rotier or Ankarsrum)</small>",
 
     "foot.hand": "we can't wait",
-    "foot.top": "Back to top"
+    "foot.top": "back to top ↑"
   }
 };
 
@@ -158,18 +158,14 @@ menuBtn.addEventListener("click", () => {
 nav.addEventListener("click", e => { if (e.target.closest("a")) closeMenu(); });
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenu(); });
 
-/* ---------- Toppfelt og aktiv knapp ---------- */
-const hero = document.querySelector(".hero");
+/* ---------- Aktiv knapp ---------- */
 const links = [...nav.querySelectorAll("a")];
 const sections = links.map(a => document.querySelector(a.getAttribute("href")));
-const oliveAreas = [...document.querySelectorAll(".olive")];
 
 function onScroll() {
-  const line = window.scrollY + bar.offsetHeight;
-  bar.classList.toggle("solid", line > hero.offsetHeight);
-  bar.classList.toggle("on-olive", oliveAreas.some(el => el.offsetTop <= line && el.offsetTop + el.offsetHeight > line));
+  const line = window.scrollY + window.innerHeight * 0.4;
   let current = sections[0];
-  sections.forEach(s => { if (s.offsetTop <= line + window.innerHeight * 0.35) current = s; });
+  sections.forEach(s => { if (s.offsetTop <= line) current = s; });
   if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 4) current = sections[sections.length - 1];
   links.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + current.id));
 }
