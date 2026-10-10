@@ -3,19 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Magnus &amp; Mathilde · 26.06.2027</title>
+  <title>Magnus &amp; Mathilde – 26. juni 2027</title>
   <meta name="description" content="Bryllupet til Magnus og Mathilde, Skåtøy i Kragerø, 26. juni 2027.">
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#3b4530">
+  <meta name="theme-color" content="#3a3f27">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="bar" id="top">
-  <a class="mono" href="#forside" aria-label="Magnus & Mathilde">M<span>&amp;</span>M</a>
+<!-- Felles kvist-tegning, brukes som pynt flere steder -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="kvist" viewBox="0 0 120 220">
+    <g fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round">
+      <path d="M62 218 C60 170 58 120 64 70 C67 45 72 22 78 4"/>
+      <path d="M61 180 C46 172 36 160 30 146 C44 150 55 160 61 176"/>
+      <path d="M60 150 C74 142 84 128 88 114 C76 120 65 132 60 146"/>
+      <path d="M60 122 C46 114 38 100 35 86 C47 92 56 104 60 118"/>
+      <path d="M63 96 C76 88 84 74 86 60 C75 67 66 79 63 92"/>
+      <path d="M65 70 C53 62 47 50 46 38 C56 44 63 55 65 66"/>
+      <path d="M70 46 C80 38 85 28 86 18 C78 24 72 33 70 42"/>
+    </g>
+  </symbol>
+</svg>
+
+<header class="bar">
+  <a class="mono" href="#forside" aria-label="Til forsiden">M &amp; M</a>
 
   <nav class="nav" id="nav" aria-label="Seksjoner">
     <a href="#forside" data-i18n="nav.home">Forside</a>
@@ -31,9 +46,7 @@
       <button type="button" data-lang="no" aria-pressed="true">NO</button>
       <button type="button" data-lang="en" aria-pressed="false">EN</button>
     </div>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">
-      <span data-i18n="nav.menu">Meny</span>
-    </button>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" data-i18n="nav.menu">Meny</button>
   </div>
 </header>
 
@@ -41,140 +54,132 @@
 
   <!-- FORSIDE -->
   <section class="hero" id="forside">
-    <div class="hero-text">
-      <p class="script hero-script" data-i18n="hero.script">Vi gifter oss</p>
-      <h1 class="names">
-        <span>Magnus</span>
-        <span class="amp">&amp;</span>
-        <span>Mathilde</span>
-      </h1>
-      <dl class="hero-facts">
-        <div><dt data-i18n="hero.when">Når</dt><dd data-i18n="hero.date">Lørdag 26. juni 2027</dd></div>
-        <div><dt data-i18n="hero.where">Hvor</dt><dd>Skåtøy, Kragerø</dd></div>
-      </dl>
-      <a class="btn btn-light" href="#rsvp" data-i18n="hero.cta">Svar på invitasjonen</a>
+    <img class="hero-img" src="images/kyss.jpg" alt="Magnus og Mathilde kysser ved et festbord" data-i18n-alt="hero.alt">
+    <div class="hero-inner">
+      <p class="hand hero-hand" data-i18n="hero.hand">vi gifter oss</p>
+      <h1 class="names">Magnus <i>&amp;</i> Mathilde</h1>
+      <p class="hero-meta">
+        <span data-i18n="hero.date">Lørdag 26. juni 2027</span>
+        <span>Skåtøy, Kragerø</span>
+      </p>
     </div>
-    <figure class="hero-photo">
-      <div class="img-slot"><img src="images/hero.jpg" alt="" onerror="this.remove()"></div>
-      <figcaption data-i18n="hero.caption">Kragerø-skjærgården</figcaption>
-    </figure>
+    <a class="hero-down" href="#velkommen" data-i18n="hero.down">Les mer</a>
   </section>
 
-  <section class="intro">
-    <p class="lead" data-i18n="intro.lead">Vi gifter oss i Skåtøy kirke og feirer videre med hagefest ved sjøen på Isnes. Her finner du alt du trenger å vite om dagen, reisen og overnattingen.</p>
+  <!-- VELKOMMEN -->
+  <section class="welcome paper" id="velkommen">
+    <figure class="polaroid tilt-l">
+      <img src="images/selfie.jpg" alt="Magnus og Mathilde med solbriller foran turkist vann" data-i18n-alt="welcome.alt" loading="lazy">
+    </figure>
+    <div class="welcome-text">
+      <h2 class="serif-xl" data-i18n="welcome.title">Kjære venner og familie</h2>
+      <p data-i18n="welcome.p1">Neste sommer gifter vi oss i Skåtøy kirke, og vi vil så gjerne at du er der. Etter vielsen tar vi ferga over til Isnes og feirer resten av dagen og natten med hagefest ved sjøen.</p>
+      <p data-i18n="welcome.p2">Her finner du programmet, hvordan du kommer deg rundt, hvor du kan bo og alt det praktiske. Siden fylles på etter hvert som planene blir klare.</p>
+      <p class="hand sign">Magnus &amp; Mathilde</p>
+    </div>
+    <svg class="kvist kvist-welcome" aria-hidden="true"><use href="#kvist"/></svg>
   </section>
 
   <!-- PROGRAM -->
-  <section class="sec" id="program">
-    <header class="sec-head">
-      <h2 data-i18n="program.title">Program</h2>
-      <p class="script" data-i18n="program.script">lørdag 26. juni</p>
-    </header>
+  <section class="program olive" id="program">
+    <div class="program-head">
+      <h2 class="serif-xl" data-i18n="program.title">Program</h2>
+      <p class="hand" data-i18n="program.hand">lørdag 26. juni</p>
+    </div>
+
+    <figure class="church">
+      <img src="images/kirke.jpg" alt="Gammelt svart-hvitt fotografi av Skåtøy kirke" data-i18n-alt="program.alt" loading="lazy">
+      <figcaption data-i18n="program.caption">Skåtøy kirke</figcaption>
+    </figure>
 
     <ol class="timeline">
-      <li>
-        <time>13:00</time>
-        <div><h3 data-i18n="program.t1">Vielse</h3><p data-i18n="program.t1d">Skåtøy kirke</p></div>
-      </li>
-      <li>
-        <time>14:00</time>
-        <div><h3 data-i18n="program.t2">Ferge til Isnes</h3><p data-i18n="program.t2d">Felles ferge fra Skåtøy brygge til hagefesten</p></div>
-      </li>
-      <li>
-        <time>15:00</time>
-        <div><h3 data-i18n="program.t3">Bobler og aperitiff</h3><p>Isnesveien 6</p></div>
-      </li>
-      <li>
-        <time>17:30</time>
-        <div><h3 data-i18n="program.t4">Middag</h3><p data-i18n="program.t4d">I hagen, med taler underveis</p></div>
-      </li>
-      <li>
-        <time>20:30</time>
-        <div><h3 data-i18n="program.t5">Kakekutting og dessert</h3></div>
-      </li>
-      <li>
-        <time>21:30</time>
-        <div><h3 data-i18n="program.t6">Dansegulvet åpner</h3></div>
-      </li>
+      <li><time>13.00</time><div><h3 data-i18n="program.t1">Vielse</h3><p data-i18n="program.t1d">Skåtøy kirke</p></div></li>
+      <li><time>14.00</time><div><h3 data-i18n="program.t2">Ferge til Isnes</h3><p data-i18n="program.t2d">Vi tar ferga sammen fra Skåtøy brygge</p></div></li>
+      <li><time>15.00</time><div><h3 data-i18n="program.t3">Bobler og aperitiff</h3><p data-i18n="program.t3d">Hagefest i Isnesveien 6</p></div></li>
+      <li><time>17.30</time><div><h3 data-i18n="program.t4">Middag</h3><p data-i18n="program.t4d">I hagen, med taler underveis</p></div></li>
+      <li><time>20.30</time><div><h3 data-i18n="program.t5">Kake og dessert</h3></div></li>
+      <li><time>21.30</time><div><h3 data-i18n="program.t6">Dansegulvet åpner</h3><p data-i18n="program.t6d">Og vi danser til siste båt</p></div></li>
     </ol>
-
-    <figure class="sec-photo img-slot" data-slot="program">
-      <img src="images/program.jpg" alt="" onerror="this.remove()">
-    </figure>
   </section>
 
   <!-- TRANSPORT -->
-  <section class="sec sec-olive" id="transport">
-    <header class="sec-head">
-      <h2 data-i18n="transport.title">Transport</h2>
-      <p class="script" data-i18n="transport.script">over vannet</p>
-    </header>
+  <section class="transport paper" id="transport">
+    <div class="transport-head">
+      <h2 class="serif-xl" data-i18n="transport.title">Transport</h2>
+      <p class="lede" data-i18n="transport.lead">Denne dagen reiser vi mest på vannet. Vi ordner båt mellom Kragerø sentrum, kirken og festen.</p>
+    </div>
 
-    <p class="sec-lead" data-i18n="transport.lead">Det meste av reisen denne dagen skjer med båt. Vi ordner transporten mellom kirken, festen og Kragerø sentrum.</p>
-
-    <ol class="route">
-      <li>
-        <span class="route-leg" data-i18n="transport.l1">Kragerø sentrum → Skåtøy kirke</span>
-        <h3 data-i18n="transport.h1">Taxibåt til vielsen</h3>
-        <p data-i18n="transport.p1">Vi organiserer taxibåter fra Kragerø sentrum til kirken. Trenger du båt fra et annet sted, ta kontakt med oss.</p>
-      </li>
-      <li>
-        <span class="route-leg" data-i18n="transport.l2">Skåtøy brygge → Isnes</span>
-        <h3 data-i18n="transport.h2">Ferge til hagefesten</h3>
-        <p data-i18n="transport.p2">Etter vielsen tar vi felles ferge fra Skåtøy brygge, et kort stykke fra kirken. Turen tar omtrent 30 minutter.</p>
-      </li>
-      <li>
-        <span class="route-leg" data-i18n="transport.l3">Isnes → Kragerø sentrum</span>
-        <h3 data-i18n="transport.h3">Båt hjem</h3>
-        <p data-i18n="transport.p3">Taxibåter går fra hagefesten til sentrum og andre steder i området utover kvelden.</p>
-        <p class="departures"><span data-i18n="transport.dep">Foreløpige avganger</span> 23:00 · 00:00 · 01:00 · 02:00</p>
-      </li>
-    </ol>
-  </section>
-
-  <!-- OVERNATTING -->
-  <section class="sec split" id="overnatting">
-    <figure class="split-photo img-slot" data-slot="stay">
-      <img src="images/overnatting.jpg" alt="" onerror="this.remove()">
+    <figure class="wide-photo">
+      <img src="images/isnes.jpg" alt="Hvitt hus og rødt uthus ved sjøen i skjærgården" data-i18n-alt="transport.alt" loading="lazy">
+      <p class="hand on-photo" data-i18n="transport.hand">over vannet</p>
     </figure>
-    <div class="split-text">
-      <header class="sec-head">
-        <h2 data-i18n="stay.title">Overnatting</h2>
-        <p class="script" data-i18n="stay.script">et sted å hvile</p>
-      </header>
-      <p data-i18n="stay.p1">Dere velger selv hvor dere vil bo. Vi har reservert 20 rom på Hotel Victoria, som kan bookes fra fredag til søndag eller fra lørdag til søndag.</p>
-      <p data-i18n="stay.p2">Rommene blir tilgjengelige i januar 2027, og det er førstemann til mølla.</p>
-      <div class="note">
-        <h3 data-i18n="stay.howTitle">Slik booker du</h3>
-        <p data-i18n="stay.how">Send en e-post til <span class="todo">[e-postadresse]</span> og oppgi navn, antall personer og hvilke netter du ønsker.</p>
-      </div>
+
+    <div class="route">
+      <svg class="route-line" viewBox="0 0 1000 60" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M10 34 C 120 6, 220 58, 333 30 S 560 4, 666 30 S 880 58, 990 26" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2 7" stroke-linecap="round"/>
+      </svg>
+      <ol class="stops">
+        <li>
+          <span class="stop-dot"></span>
+          <p class="stop-leg" data-i18n="transport.l1">Kragerø sentrum til Skåtøy kirke</p>
+          <h3 data-i18n="transport.h1">Taxibåt til vielsen</h3>
+          <p data-i18n="transport.p1">Vi organiserer taxibåter fra Kragerø sentrum til kirken. Trenger du båt fra et annet sted, si fra til oss.</p>
+        </li>
+        <li>
+          <span class="stop-dot"></span>
+          <p class="stop-leg" data-i18n="transport.l2">Skåtøy brygge til Isnes</p>
+          <h3 data-i18n="transport.h2">Ferge til hagefesten</h3>
+          <p data-i18n="transport.p2">Etter vielsen tar vi felles ferge fra Skåtøy brygge, et lite stykke fra kirken. Turen tar omtrent 30 minutter.</p>
+        </li>
+        <li>
+          <span class="stop-dot"></span>
+          <p class="stop-leg" data-i18n="transport.l3">Isnes til Kragerø sentrum</p>
+          <h3 data-i18n="transport.h3">Båt hjem</h3>
+          <p data-i18n="transport.p3">Taxibåter går fra festen til sentrum og andre steder i området utover natten.</p>
+          <p class="departures"><span data-i18n="transport.dep">Foreløpige avganger</span><span class="dep-times" data-i18n="transport.times">23.00, 00.00, 01.00 og 02.00</span></p>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- RSVP -->
-  <section class="sec sec-paper" id="rsvp">
-    <header class="sec-head">
-      <h2>RSVP</h2>
-      <p class="script" data-i18n="rsvp.script">vi håper du kommer</p>
-    </header>
-    <p class="sec-lead" data-i18n="rsvp.lead">Gi oss beskjed innen <span class="todo">[svarfrist]</span> om du kan komme.</p>
+  <!-- OVERNATTING -->
+  <section class="stay kraft" id="overnatting">
+    <article class="card">
+      <span class="tape" aria-hidden="true"></span>
+      <h2 class="serif-xl" data-i18n="stay.title">Overnatting</h2>
+      <p class="hand" data-i18n="stay.hand">et sted å hvile</p>
+      <p data-i18n="stay.p1">Du velger selv hvor du vil bo. Vi har reservert 20 rom på Hotel Victoria, som kan bookes fra fredag til søndag eller fra lørdag til søndag.</p>
+      <p data-i18n="stay.p2">Rommene blir tilgjengelige i januar 2027, og det er førstemann til mølla.</p>
+      <h3 data-i18n="stay.howTitle">Slik booker du</h3>
+      <p data-i18n="stay.how">Send en e-post til <span class="todo">[e-postadresse]</span> med navn, antall personer og hvilke netter du ønsker.</p>
+    </article>
+    <svg class="kvist kvist-stay" aria-hidden="true"><use href="#kvist"/></svg>
+  </section>
 
-    <form class="rsvp" id="rsvp-form" action="" method="POST" novalidate>
+  <!-- RSVP -->
+  <section class="rsvp-sec olive" id="rsvp">
+    <div class="rsvp-head">
+      <p class="hand rsvp-hand" data-i18n="rsvp.hand">kommer du?</p>
+      <h2 class="serif-xl">RSVP</h2>
+      <p data-i18n="rsvp.lead">Gi oss beskjed innen <span class="todo">[svarfrist]</span>. Svar én gang for alle i invitasjonen din.</p>
+    </div>
+
+    <form class="rsvp" id="rsvp-form" novalidate>
       <div class="field">
         <label for="f-name" data-i18n="rsvp.name">Fullt navn</label>
         <input id="f-name" name="navn" type="text" autocomplete="name" required>
       </div>
 
       <fieldset class="field">
-        <legend data-i18n="rsvp.coming">Kommer du?</legend>
+        <legend data-i18n="rsvp.coming">Kan du komme?</legend>
         <div class="choice">
           <label><input type="radio" name="kommer" value="ja" required> <span data-i18n="rsvp.yes">Ja, jeg kommer</span></label>
-          <label><input type="radio" name="kommer" value="nei"> <span data-i18n="rsvp.no">Nei, jeg kan dessverre ikke</span></label>
+          <label><input type="radio" name="kommer" value="nei"> <span data-i18n="rsvp.no">Nei, dessverre</span></label>
         </div>
       </fieldset>
 
       <div class="field">
-        <label for="f-plus" data-i18n="rsvp.plus">Navn på andre i invitasjonen som kommer</label>
+        <label for="f-plus" data-i18n="rsvp.plus">Andre i invitasjonen som kommer</label>
         <input id="f-plus" name="andre" type="text">
       </div>
 
@@ -185,39 +190,39 @@
 
       <div class="field">
         <label for="f-msg" data-i18n="rsvp.msg">Noe annet vi bør vite?</label>
-        <textarea id="f-msg" name="melding" rows="3"></textarea>
+        <textarea id="f-msg" name="melding" rows="2"></textarea>
       </div>
 
-      <button class="btn btn-dark" type="submit" data-i18n="rsvp.send">Send svar</button>
+      <button class="btn" type="submit" data-i18n="rsvp.send">Send svar</button>
       <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
     </form>
   </section>
 
   <!-- PRAKTISK INFO -->
-  <section class="sec" id="info">
-    <header class="sec-head">
-      <h2 data-i18n="info.title">Praktisk info</h2>
-      <p class="script" data-i18n="info.script">godt å vite</p>
-    </header>
+  <section class="info paper" id="info">
+    <div class="info-head">
+      <h2 class="serif-xl" data-i18n="info.title">Praktisk info</h2>
+      <p class="hand" data-i18n="info.hand">godt å vite</p>
+    </div>
 
-    <div class="info-grid">
+    <div class="info-cols">
       <article>
-        <h3 data-i18n="info.dressT">Antrekk</h3>
-        <p data-i18n="info.dress1">Sommerlig formelt. Damer: lang kjole, unngå svart. Herrer: dress, eller smoking for de som ønsker.</p>
-        <p data-i18n="info.dress2">Dette er et hagebryllup, så velg sko som tåler gress.</p>
+        <h3 class="serif-m" data-i18n="info.dressT">Antrekk</h3>
+        <p data-i18n="info.dress1">Sommerlig formelt. Damer: lang kjole, gjerne ikke svart. Herrer: dress, eller smoking om du har lyst.</p>
+        <p data-i18n="info.dress2">Det er hagebryllup, så velg sko som tåler gress.</p>
       </article>
       <article>
-        <h3 data-i18n="info.speechT">Taler og innslag</h3>
-        <p data-i18n="info.speech">Ønsker du å holde tale eller ha et innslag? Ta kontakt med toastmaster <span class="todo">[navn og kontakt]</span> innen 1. juni 2027.</p>
+        <h3 class="serif-m" data-i18n="info.speechT">Taler og innslag</h3>
+        <p data-i18n="info.speech">Vil du holde tale eller ha et innslag? Ta kontakt med toastmaster <span class="todo">[navn og kontakt]</span> innen 1. juni 2027.</p>
       </article>
       <article>
-        <h3 data-i18n="info.allergyT">Allergier</h3>
-        <p data-i18n="info.allergy">Har du allergier eller matpreferanser? Skriv det i RSVP-skjemaet, eller gi beskjed til <span class="todo">[e-postadresse]</span> innen 1. mai 2027.</p>
+        <h3 class="serif-m" data-i18n="info.allergyT">Allergier</h3>
+        <p data-i18n="info.allergy">Skriv det i RSVP-skjemaet, eller gi beskjed til <span class="todo">[e-postadresse]</span> innen 1. mai 2027.</p>
       </article>
-      <article class="wide">
-        <h3 data-i18n="info.giftT">Gaver</h3>
-        <p data-i18n="info.gift1">Mange av dere reiser langt for å være med, og vi forventer ingen gaver. Den største gaven er at dere feirer dagen sammen med oss.</p>
-        <p data-i18n="info.gift2">Ønsker du likevel å gi noe, blir vi veldig glade for et bidrag til bryllupsreisen. Ellers setter vi pris på:</p>
+      <article class="gifts">
+        <h3 class="serif-m" data-i18n="info.giftT">Gaver</h3>
+        <p data-i18n="info.gift1">Mange av dere reiser langt for å være med, og vi forventer ingen gaver. Den største gaven er at dere feirer dagen med oss.</p>
+        <p data-i18n="info.gift2">Vil du likevel gi noe, blir vi veldig glade for et bidrag til bryllupsreisen. Ellers setter vi pris på:</p>
         <ul class="wish">
           <li data-i18n="info.w1">Stormkjøkken eller tilbehør</li>
           <li data-i18n="info.w2">Termos</li>
@@ -230,10 +235,10 @@
 
 </main>
 
-<footer class="foot">
-  <p class="names-small">Magnus <span class="amp">&amp;</span> Mathilde</p>
-  <p>26.06.2027, Skåtøy i Kragerø</p>
-  <a href="#forside" data-i18n="foot.top">Til toppen</a>
+<footer class="foot olive">
+  <p class="hand foot-hand" data-i18n="foot.hand">vi gleder oss</p>
+  <p class="foot-names">Magnus &amp; Mathilde</p>
+  <p class="foot-meta"><span>26.06.2027</span><a href="#forside" data-i18n="foot.top">Til toppen</a></p>
 </footer>
 
 <script src="script.js"></script>
