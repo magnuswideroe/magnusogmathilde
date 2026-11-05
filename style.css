@@ -12,7 +12,7 @@
   --cabernet:  #5b3c45;
 
   /* Papirfarge. Teksturen legges oppå som en skygge, så denne fargen kan endres fritt. */
-  --paper: #f4f0e8;
+  --paper: #f8f6f1;
 
   /* Caslon: Libre Caslon Text er en gratis Caslon for nettet.
      Helvetica: Helvetica Neue på Mac og iPhone, ellers Inter Tight Light. */
@@ -169,6 +169,7 @@ h3 { font-weight: 400; font-size: 17.5px; line-height: 1.35; }
 .form-status { min-height: 1.6em; margin-top: 12px; font-style: italic; color: var(--moss); }
 
 /* ---------- Praktisk info og avslutningsbilde ---------- */
+.info { padding-bottom: clamp(40px, 4vw, 60px); }
 .info .ch-body { grid-column: 4 / span 6; }
 .closing-img { grid-column: 5 / span 4; margin-top: clamp(80px, 9vw, 140px); }
 .closing-img img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: saturate(.85) contrast(.95); }
@@ -176,7 +177,7 @@ h3 { font-weight: 400; font-size: 17.5px; line-height: 1.35; }
 .wish li { font-style: italic; padding: 2px 0; }
 
 /* ---------- Bunn ---------- */
-.foot { padding-top: clamp(50px, 6vw, 90px); padding-bottom: 36px; }
+.foot { padding-top: clamp(30px, 3.5vw, 55px); padding-bottom: 36px; }
 .foot-sees { grid-column: 1 / -1; text-align: center; font-style: italic; font-size: clamp(30px, 3vw, 42px); line-height: 1; }
 .foot-meta { grid-column: 1 / -1; display: flex; justify-content: space-between; margin-top: clamp(60px, 7vw, 100px); }
 .foot-meta a { text-decoration: none; color: inherit; }
