@@ -77,6 +77,7 @@ const T = {
     "rsvp.send": "Send reply",
 
     "info.title": "Good to know",
+    "info.alt": "Magnus and Mathilde holding each other on a boat, looking out over the sea",
     "info.dress1": "Summer formal. Women: a long dress, preferably not black. Men: a suit, or a tuxedo if you like.",
     "info.dress2": "It's a garden wedding, so choose shoes that can handle grass.",
     "info.speechT": "Speeches",
