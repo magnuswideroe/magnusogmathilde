@@ -14,6 +14,42 @@
 </head>
 <body>
 
+<!-- Åpningsanimasjon: M & M skrives, så toner den rosa flaten ut.
+     Vises én gang per besøk, og hoppes over for dem som har slått av animasjoner. -->
+<div class="opening" id="opening" aria-hidden="true">
+  <svg viewBox="236 427 447 493" class="opening-mark">
+    <text class="l1" x="281.5" y="571" font-size="130.6">M</text>
+    <text class="l2" x="390.7" y="711.5" font-size="154">&amp;</text>
+    <text class="l3" x="475.5" y="870" font-size="130.6">M</text>
+  </svg>
+</div>
+<script>
+  (function () {
+    var intro = document.getElementById("opening");
+    var seen = false;
+    try { seen = sessionStorage.getItem("mm-intro") === "1"; } catch (e) {}
+    var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (seen || still) { intro.remove(); return; }
+    document.documentElement.classList.add("opening-on");
+    function end() {
+      document.documentElement.classList.remove("opening-on");
+      if (intro.parentNode) intro.remove();
+      try { sessionStorage.setItem("mm-intro", "1"); } catch (e) {}
+    }
+    function go() {
+      if (intro.classList.contains("go")) return;
+      intro.classList.add("go");
+      setTimeout(end, 5200);
+    }
+    intro.addEventListener("click", end);
+    intro.addEventListener("animationend", function (e) { if (e.target === intro) end(); });
+    if (document.fonts && document.fonts.load) {
+      document.fonts.load("100px 'Pinyon Script'").then(go, go);
+      setTimeout(go, 1500);
+    } else { go(); }
+  })();
+</script>
+
 <header class="bar">
   <a class="mono" href="#forside" aria-label="Til forsiden">M &amp; M</a>
   <nav class="nav" id="nav" aria-label="Seksjoner">
@@ -210,10 +246,7 @@
 
 <footer class="page foot">
   <p class="foot-sees" data-i18n="foot.sees">Sees!</p>
-  <div class="backcover">
-    <p class="monogram" aria-label="Magnus og Mathilde"><span>M</span><span>&amp;</span><span>M</span></p>
-    <p class="foot-meta cap"><span>26.06.27 · Kragerø</span><a href="#forside" data-i18n="foot.top">Til toppen</a></p>
-  </div>
+  <p class="foot-meta cap"><span>26.06.27 · Kragerø</span><a href="#forside" data-i18n="foot.top">Til toppen</a></p>
 </footer>
 
 <script src="script.js"></script>
