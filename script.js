@@ -4,7 +4,11 @@
 
 // Lim inn adressen til skjematjenesten her (f.eks. Formspree eller Google Forms).
 // Så lenge den er tom, sendes ingenting.
-const RSVP_ENDPOINT = "";
+// Svarene sendes som e-post via FormSubmit (formsubmit.co).
+// Første svar utløser en bekreftelses-e-post til adressen under, som må godkjennes én gang.
+// Etterpå sender FormSubmit en tilfeldig kode som kan erstatte e-postadressen her,
+// så adressen ikke ligger synlig i koden.
+const RSVP_ENDPOINT = "https://formsubmit.co/ajax/magnus.wideroe@gmail.com";
 
 const T = {
   en: {
@@ -90,7 +94,7 @@ const T = {
     "info.dress1": "Summer formal. Women: a long dress, not black. Men: a suit, or a tuxedo if you like.",
     "info.dress2": "It's a garden wedding, so choose shoes and outfits with that in mind. We have a tent with walls that can be put up, and blankets if the weather turns bad.",
     "info.speechT": "Speeches",
-    "info.speech": "We'd like the evening to flow well, with a good mix of speeches and mingling around the tables. All speeches and performances must be agreed with our toastmaster Torjus on <span class=\"todo\">[phone]</span> in advance, by 1 June 2027 at the latest.",
+    "info.speech": "We'd like the evening to flow well, with a good mix of speeches and mingling around the tables. All speeches and performances must be agreed with our toastmaster Torjus on <a href=\"tel:+4799346226\">+47 993 46 226</a> in advance, by 1 June 2027 at the latest.",
     "info.allergyT": "Allergies",
     "info.allergy": "Add them to your reply, or let us know at <span class=\"todo\">[email address]</span>.",
     "info.giftT": "Gifts",
@@ -192,10 +196,18 @@ form.addEventListener("submit", async e => {
   if (!String(data.get("navn") || "").trim() || !data.get("kommer")) { status.textContent = s.missing; return; }
   if (!RSVP_ENDPOINT) { status.textContent = s.notReady; return; }
   status.textContent = s.sending;
-  data.append("sprak", lang);
+  const body = Object.fromEntries(data.entries());
+  body["språk"] = lang === "en" ? "engelsk" : "norsk";
+  body._subject = `RSVP: ${body.navn} (${body.kommer})`;
+  body._template = "table";
   try {
-    const res = await fetch(RSVP_ENDPOINT, { method: "POST", body: data, headers: { Accept: "application/json" } });
-    if (!res.ok) throw new Error(res.status);
+    const res = await fetch(RSVP_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(body)
+    });
+    const out = await res.json().catch(() => ({}));
+    if (!res.ok || String(out.success) === "false") throw new Error(out.message || res.status);
     form.reset();
     status.textContent = s.ok;
   } catch (err) {
