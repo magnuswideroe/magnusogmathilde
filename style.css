@@ -194,13 +194,9 @@ h3 { font-weight: 400; font-size: 16.5px; line-height: 1.35; }
 }
 .opening-on, .opening-on body { overflow: hidden; height: 100%; }
 .opening-mark { width: min(56vw, 380px); height: auto; overflow: visible; }
-.opening .glyph { font-family: var(--script); fill: var(--paper); opacity: 0; }
-.opening .ink {
-  fill: none; stroke: var(--paper); stroke-width: 3.2;
-  stroke-linecap: round; stroke-linejoin: round;
-  visibility: hidden;
-}
-.opening-run .opening .ink { visibility: visible; }
+.opening .glyph { fill: var(--paper); }
+.opening .pen { fill: none; stroke: #fff; stroke-linecap: round; stroke-linejoin: round; }
+.opening .pen path { visibility: hidden; }
 
 /* ---------- Nettbrett ---------- */
 @media (max-width: 1100px) {
