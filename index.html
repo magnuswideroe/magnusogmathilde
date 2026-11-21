@@ -18,9 +18,35 @@
      Vises én gang per besøk, og hoppes over for dem som har slått av animasjoner. -->
 <div class="opening" id="opening" aria-hidden="true">
   <svg viewBox="236 427 447 493" class="opening-mark">
-    <text class="l1" x="281.5" y="571" font-size="130.6">M</text>
-    <text class="l2" x="390.7" y="711.5" font-size="154">&amp;</text>
-    <text class="l3" x="475.5" y="870" font-size="130.6">M</text>
+    <defs>
+      <linearGradient id="pen-l1" x1="0" x2="1" y1="0" y2="0">
+        <stop offset="0" stop-color="#fff"/><stop offset="0.975" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="m-l1" maskUnits="userSpaceOnUse" x="132" y="417" width="462" height="214">
+        <g transform="translate(362.5 524.0) skewX(-22) translate(-362.5 -524.0)">
+          <rect class="pen pen-l1" x="-421.6" y="437" width="712.0" height="174" fill="url(#pen-l1)" style="--d:148px"/>
+        </g>
+      </mask>
+      <linearGradient id="pen-l2" x1="0" x2="1" y1="0" y2="0">
+        <stop offset="0" stop-color="#fff"/><stop offset="0.971" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="m-l2" maskUnits="userSpaceOnUse" x="273" y="576" width="366" height="194">
+        <g transform="translate(456.0 673.0) skewX(-22) translate(-456.0 -673.0)">
+          <rect class="pen pen-l2" x="-205.1" y="596" width="616.0" height="154" fill="url(#pen-l2)" style="--d:93px"/>
+        </g>
+      </mask>
+      <linearGradient id="pen-l3" x1="0" x2="1" y1="0" y2="0">
+        <stop offset="0" stop-color="#fff"/><stop offset="0.975" stop-color="#fff"/><stop offset="1" stop-color="#000"/>
+      </linearGradient>
+      <mask id="m-l3" maskUnits="userSpaceOnUse" x="326" y="716" width="462" height="214">
+        <g transform="translate(556.5 823.0) skewX(-22) translate(-556.5 -823.0)">
+          <rect class="pen pen-l3" x="-227.6" y="736" width="712.0" height="174" fill="url(#pen-l3)" style="--d:148px"/>
+        </g>
+      </mask>
+    </defs>
+    <text class="l1" x="281.5" y="571" font-size="130.6" mask="url(#m-l1)">M</text>
+    <text class="l2" x="390.7" y="711.5" font-size="154" mask="url(#m-l2)">&amp;</text>
+    <text class="l3" x="475.5" y="870" font-size="130.6" mask="url(#m-l3)">M</text>
   </svg>
 </div>
 <script>
@@ -39,7 +65,7 @@
     function go() {
       if (intro.classList.contains("go")) return;
       intro.classList.add("go");
-      setTimeout(end, 5200);
+      setTimeout(end, 6100);
     }
     intro.addEventListener("click", end);
     intro.addEventListener("animationend", function (e) { if (e.target === intro) end(); });
@@ -51,7 +77,6 @@
 </script>
 
 <header class="bar">
-  <a class="mono" href="#forside" aria-label="Til forsiden">M &amp; M</a>
   <nav class="nav" id="nav" aria-label="Seksjoner">
     <a href="#forside" data-i18n="nav.home">Forside</a>
     <a href="#program" data-i18n="nav.program">Program</a>
