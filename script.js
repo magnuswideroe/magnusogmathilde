@@ -1,4 +1,4 @@
-/* Mathilde & Magnus – språk, meny og RSVP
+/* Magnus & Mathilde – språk, meny og RSVP
    Norsk står direkte i index.html. Engelsk står i T.en under.
    For å endre en tekst: rediger norsk i index.html og engelsk her (samme nøkkel). */
 
@@ -16,9 +16,9 @@ const T = {
     "nav.info": "Good to know",
     "nav.menu": "Menu",
 
-    "cover.alt": "Mathilde and Magnus kissing at a dinner table",
+    "cover.alt": "Magnus and Mathilde kissing at a dinner table",
         "intro.title": "We're getting married!",
-    "intro.lead": "And we hope you'll celebrate with us in Kragerø on 26 June 2027. We'll be there all weekend, from Friday 25 to Sunday 27 June.",
+    "intro.lead": "And we hope you'll celebrate with us in Kragerø on 26 June 2027.",
     "facts.ceremonyT": "Ceremony",
     "facts.ceremony": "Skåtøy Church, 1 pm",
     "facts.partyT": "Garden party",
@@ -27,8 +27,9 @@ const T = {
     "facts.rsvp": "By 1 April 2027, <a href=\"#rsvp\">here on this site</a>",
 
     "program.title": "Programme",
-    "program.fri": "Friday 25",
-    "program.sat": "Saturday 26",
+    "program.fri": "Friday 25 June",
+    "program.friText": "On Friday there will be a chance to get together for those who'd like. More information to come.",
+    "program.sat": "Saturday 26 June",
     "program.sun": "Sunday 27",
     "program.soon": "coming",
     "program.soon2": "coming",
@@ -37,7 +38,7 @@ const T = {
     "program.t1": "Ceremony",
     "program.t1d": "Skåtøy Church",
     "program.t2": "Ferry to Langøy",
-    "program.t2d": "Together from Skåtøy pier, about 30 minutes",
+    "program.t2d": "Guests travel together from Skåtøy pier to the wedding party",
     "program.t3": "Bubbles and aperitifs",
     "program.t3d": "In the garden, Isnesveien 6",
     "program.t4": "Dinner",
@@ -50,41 +51,50 @@ const T = {
     "transport.lead": "On the day, we'll mostly be travelling by water. We're arranging boats between Kragerø town centre, the church and the party.",
     "transport.alt": "A white house and a red outbuilding by the sea",
     "transport.h1": "To the ceremony",
-    "transport.p1": "We're arranging water taxis from Kragerø town centre and other central spots to Skåtøy Church.",
+    "transport.p1": "We're arranging water taxis from Kragerø town centre and other central spots to Skåtøy Church. Let us know in the RSVP form if you need a seat.",
     "transport.h2": "To the garden party",
-    "transport.p2": "A shared ferry from Skåtøy pier, a short walk from the church. The trip takes about 30 minutes.",
+    "transport.p2": "We've booked a ferry that takes all the guests together from Skåtøy pier, a short walk from the church, to the garden party. The trip takes about 30 minutes.",
     "transport.h3": "Home",
-    "transport.p3": "Water taxis from the party to the town centre and other places nearby throughout the night.",
+    "transport.p3": "We're booking water taxis that run from the party to the town centre and other places nearby throughout the night.",
 
     "stay.title": "Accommodation",
-    "stay.p1": "We're trying to arrange places to stay in cabins nearby for anyone who'd like that. We've also reserved 20 rooms at Hotel Victoria, which can be booked from Friday to Sunday or from Saturday to Sunday.",
-    "stay.alt": "Mathilde and Magnus smiling in a tent, Magnus reading a book",
+    "stay.p1": "We know that many of you will be staying in your own cabins in the area over the wedding weekend. For those who can't or would rather not, we've reserved 20 rooms of different sizes at Hotel Victoria in Kragerø town centre. They can be booked from Friday to Sunday, or from Saturday to Sunday.",
+    "stay.help": "We're also happy to help find other options, such as borrowing or renting a cabin nearby. Just get in touch with Magnus.",
+    "stay.alt": "Magnus and Mathilde smiling in a tent, Magnus reading a book",
     "stay.whenT": "Available",
     "stay.p2": "From January 2027, first come, first served",
     "stay.howT": "Booking",
     "stay.how": "Send an email to <span class=\"todo\">[email address]</span> with your name, the number of guests and the nights you'd like.",
 
-    "rsvp.alt": "Mathilde and Magnus in sunglasses in front of turquoise water",
-    "rsvp.lead": "Please reply by 1 April 2027. One reply for everyone on your invitation is fine.",
+    "rsvp.alt": "Magnus and Mathilde in sunglasses in front of turquoise water",
+    "rsvp.lead": "Please reply by 1 April 2027, on behalf of everyone on your invitation.",
     "rsvp.name": "Name",
     "rsvp.coming": "Will you come?",
     "rsvp.yes": "Yes, of course",
     "rsvp.no": "Sadly not",
     "rsvp.plus": "Who else",
+    "rsvp.boat": "Water taxi to the ceremony?",
+    "rsvp.boatYes": "Yes, from the town centre",
+    "rsvp.boatNo": "No thanks",
+    "rsvp.fri": "Friday get-together?",
+    "rsvp.friNote": "Friday 25 June, 17:00–21:00",
+    "rsvp.friYes": "Yes",
+    "rsvp.friNo": "No",
+    "rsvp.friMaybe": "Not sure yet",
     "rsvp.allergy": "Allergies",
     "rsvp.msg": "Anything else?",
     "rsvp.send": "Send reply",
 
     "info.title": "Good to know",
     "info.alt": "Magnus and Mathilde holding each other on a boat, looking out over the sea",
-    "info.dress1": "Summer formal. Women: a long dress, preferably not black. Men: a suit, or a tuxedo if you like.",
-    "info.dress2": "It's a garden wedding, so choose shoes that can handle grass.",
+    "info.dress1": "Summer formal. Women: a long dress, not black. Men: a suit, or a tuxedo if you like.",
+    "info.dress2": "It's a garden wedding, so choose shoes and outfits with that in mind. We have a tent with walls that can be put up, and blankets if the weather turns bad.",
     "info.speechT": "Speeches",
-    "info.speech": "If you'd like to say a few words, contact our toastmaster Torjus on <span class=\"todo\">[phone]</span>.",
+    "info.speech": "We'd like the evening to flow well, with a good mix of speeches and mingling around the tables. All speeches and performances must be agreed with our toastmaster Torjus on <span class=\"todo\">[phone]</span> in advance, by 1 June 2027 at the latest.",
     "info.allergyT": "Allergies",
     "info.allergy": "Add them to your reply, or let us know at <span class=\"todo\">[email address]</span>.",
     "info.giftT": "Gifts",
-    "info.gift1": "Many of you are travelling a long way to be with us, and we don't expect any gifts. Having you there is the greatest gift.",
+    "info.gift1": "Many of our guests are travelling to celebrate this day with us, and we don't expect any gifts. The greatest gift is that you come!",
     "info.gift2": "If you'd still like to give something, a contribution towards our honeymoon would make us very happy. We'd also love:",
     "info.w1": "A camping stove (stormkjøkken) or accessories",
     "info.w2": "A thermos",
@@ -127,7 +137,7 @@ function setLang(next) {
   textNodes.forEach(n => { const v = T.en[n.dataset.i18n]; n.innerHTML = en && v ? v : originalText.get(n); });
   altNodes.forEach(n => { const v = T.en[n.dataset.i18nAlt]; n.alt = en && v ? v : originalAlt.get(n); });
   document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
-  document.title = en ? "Mathilde & Magnus – Kragerø 26.06.27" : "Mathilde & Magnus – Kragerø 26.06.27";
+  document.title = en ? "Magnus & Mathilde – 26.06.27 · Kragerø" : "Magnus & Mathilde – 26.06.27 · Kragerø";
   try { localStorage.setItem("mm-sprak", lang); } catch (e) {}
   const url = new URL(location.href);
   if (en) url.searchParams.set("lang", "en"); else url.searchParams.delete("lang");
