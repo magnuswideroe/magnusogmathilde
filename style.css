@@ -185,18 +185,7 @@ h3 { font-weight: 400; font-size: 16.5px; line-height: 1.35; }
 .foot-meta { grid-column: 1 / -1; display: flex; justify-content: space-between; margin-top: clamp(60px, 7vw, 100px); }
 .foot-meta a { text-decoration: none; color: inherit; }
 
-/* ---------- Åpningsanimasjon (styres av skriptet øverst i index.html) ---------- */
-.opening {
-  position: fixed; inset: 0; z-index: 200;
-  display: grid; place-items: center;
-  background: var(--cabernet); cursor: pointer;
-  touch-action: none; overscroll-behavior: contain;
-}
-.opening-on, .opening-on body { overflow: hidden; height: 100%; }
-.opening-mark { width: min(56vw, 380px); height: auto; overflow: visible; }
-.opening .glyph { fill: var(--paper); }
-.opening .pen { fill: none; stroke: #fff; stroke-linecap: round; stroke-linejoin: round; }
-.opening .pen path { visibility: hidden; }
+/* Åpningsanimasjonen har sin egen stil øverst i index.html */
 
 /* ---------- Nettbrett ---------- */
 @media (max-width: 1100px) {
